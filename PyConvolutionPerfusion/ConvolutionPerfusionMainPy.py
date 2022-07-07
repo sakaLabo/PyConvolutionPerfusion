@@ -90,23 +90,32 @@ def sampleCalFromImg():
             bfImg = bf[i,:]
             bfImg = bfImg.reshape(img0.shape)
             bfImg = bfImg.astype(np.uint8)
-            plt.subplot(numBFprms, inputChan, 0 * inputChan + i + 1)
+            ax = plt.subplot(inputChan, numBFprms, i * numBFprms + 1)
+            ax.axis('off')
             plt.imshow(bfImg, cmap = "jet")
             plt.colorbar()
+            tit = 'BF'+str(i)
+            plt.title(tit)
 
             bvImg = bv[i,:]
             bvImg = bvImg.reshape(img0.shape)
             bvImg = bvImg.astype(np.uint8)
-            plt.subplot(numBFprms, inputChan, 1 * inputChan + i + 1)
+            ax = plt.subplot(inputChan, numBFprms, i * numBFprms + 2)
+            ax.axis('off')
             plt.imshow(bvImg, cmap = "jet")
             plt.colorbar()
+            tit = 'BV'+str(i)
+            plt.title(tit)
 
             mttImg = mtt[i,:]
             mttImg = mttImg.reshape(img0.shape)
             mttImg = mttImg.astype(np.uint8)
-            plt.subplot(numBFprms, inputChan, 2 * inputChan + i + 1)
+            ax = plt.subplot(inputChan, numBFprms, i * numBFprms + 3)
+            ax.axis('off')
             plt.imshow(mttImg, cmap = "jet")
             plt.colorbar()
+            tit = 'MTT'+str(i)
+            plt.title(tit)
         plt.show()
 
 
@@ -135,8 +144,7 @@ def sampleCalFromImg():
 
         for i in range(inputChan):
             pr = impulseResponse[n * inputChan * frameNum + i * frameNum : n * inputChan * frameNum + (i + 1) * frameNum]
-            con = np.convolve(pr, tLSF[0][i])
-            con = con[:frameNum]
+            con = np.convolve(pr, tLSF[0][i])[:frameNum]
             plt.plot(timeFunc, con, linestyle="dotted")
         plt.grid(True)
         plt.show()
