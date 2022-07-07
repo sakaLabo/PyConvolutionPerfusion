@@ -1,7 +1,6 @@
 # PyConvolutionPerfusion
 
-![Figure_1](https://user-images.githubusercontent.com/106053283/176855002-4963fff5-3735-476a-9857-7344fcaad32f.png)
-
+![Figure_1](https://user-images.githubusercontent.com/106053283/177734578-ccb45acb-2ed7-48a3-9e5b-2486a5b33c4e.png)
 
 ![2inputs_1280x480_fps25](https://user-images.githubusercontent.com/106053283/176849366-cd24cfc8-75a3-4186-8cbf-592949e26ea5.gif)
 
