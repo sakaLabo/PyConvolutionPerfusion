@@ -10,6 +10,10 @@ However, this tool sets an appropriate initial value for the Impulse response, c
 -->
 
 # Libraries  
+Python 3.7  
+torch==1.11.0+cu113 torchvision==0.12.0+cu113 --extra-index-url https://download.pytorch.org/whl/cu113  
+matplotlib==3.1.3  
+opencv-python-headless==3.4.9.33  
 
 # Impulse Response
 
