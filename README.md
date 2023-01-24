@@ -1,7 +1,7 @@
 # PyConvolutionPerfusion
 
 # Abstract  
-This is a Perfusion blood flow analysis tool. It is mainly intended for MRI. 　
+This is a Perfusion blood flow analysis tool. It is mainly intended for MRI.  
 It is classified as a deconvolution method, but uses "Convolution" instead of impulse response estimation by deconvolution.
 
 
