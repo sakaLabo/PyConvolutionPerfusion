@@ -2,9 +2,10 @@
 
 # Abstract  
 This is a Perfusion blood flow analysis tool. It is mainly intended for MRI.  
-It is classified as a deconvolution method, but uses "Convolution" instead of impulse response estimation by deconvolution.
+It is classified as a deconvolution method, but uses "Convolution" instead of Deconvolution.  
 
-
+In general, the Impulse Response is obtained by applying Deconvolution to the Arterial Input Function and the target Time Density Function.  
+However, this tool sets an appropriate initial value for the Impulse response, convolves it with the Arterial Input Function, and optimizes the resulting composite curve and the Time Density Function of the target.  
 
 ![Figure_1](https://user-images.githubusercontent.com/106053283/177734578-ccb45acb-2ed7-48a3-9e5b-2486a5b33c4e.png)
 
